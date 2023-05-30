@@ -1,0 +1,9 @@
+pip install -r requirements.txt
+pip install opencv-python  
+pip install opencv-contrib-python  
+
+conda create --name myenv
+
+python src/detect_mask_image.py -i "example_images/pic2.jpg" -m MFN -c 0.7
+
+python src/detect_mask_video.py -m MFN -c 0.7 
